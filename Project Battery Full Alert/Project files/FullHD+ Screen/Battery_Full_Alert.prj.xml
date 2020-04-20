@@ -1,0 +1,1432 @@
+<TaskerData sr="" dvi="1" tv="5.9.2">
+	<dmetric>1080.0,2016.0</dmetric>
+	<Profile sr="prof16" ve="2">
+		<cdate>1587298443224</cdate>
+		<clp>true</clp>
+		<edate>1587218635403</edate>
+		<id>16</id>
+		<limit>true</limit>
+		<mid0>15</mid0>
+		<nme>Charge Full</nme>
+		<Event sr="con0" ve="2">
+			<code>205</code>
+			<pri>1</pri>
+		</Event>
+	</Profile>
+	<Profile sr="prof17" ve="2">
+		<cdate>1587298443224</cdate>
+		<clp>true</clp>
+		<edate>1587039512775</edate>
+		<id>17</id>
+		<mid0>2</mid0>
+		<nme>Power Disconected</nme>
+		<State sr="con0" ve="2">
+			<code>10</code>
+			<pin>true</pin>
+			<Int sr="arg0" val="0"/>
+		</State>
+	</Profile>
+	<Project sr="proj0" ve="2">
+		<cdate>1586875058644</cdate>
+		<name>Battery Full Alert</name>
+		<pids>16,17</pids>
+		<scenes>Intro,File Picker,Setup,Battery Full Arert</scenes>
+		<tids>2,6,9,3,10,15,8,4,12,5,11,13,7,14</tids>
+		<Kid sr="Kid">
+			<launchID>7</launchID>
+			<pkg>n.paul.battery.full.alert</pkg>
+			<vTarg>21</vTarg>
+			<vnme>1.0.0 [for FullHD+ by N Paul]</vnme>
+			<vnum>11</vnum>
+		</Kid>
+		<Img sr="icon" ve="2">
+			<uri>content://com.android.externalstorage.documents/document/primary%3AProject%20Battery%20Full%20Alert%2FLogo%20files%2F512x512%20Low%20png.png</uri>
+		</Img>
+	</Project>
+	<Scene sr="sceneBattery Full Arert">
+		<cdate>1587217593167</cdate>
+		<edate>1587292399804</edate>
+		<heightLand>1080</heightLand>
+		<heightPort>1776</heightPort>
+		<nme>Battery Full Arert</nme>
+		<widthLand>1080</widthLand>
+		<widthPort>1080</widthPort>
+		<TextElement sr="elements0" ve="3">
+			<flags>4</flags>
+			<geom>0,643,1080,1080,390,480,337,600</geom>
+			<Str sr="arg0" ve="3">Text1</Str>
+			<Str sr="arg1" ve="3">Battery Full Alert is a auto alert system which helps you to unplug your device from getting overcharge at the right moment...
+This program will alert you as soon as your phone fully charge...
+
+About app compatibility: This application's icon and contains are 
+designed and developed by me (N Paul). This program is best suitable for 
+stock android with HD (720x1280 p) and FullHD+ (1080x2160 p) resolution's display. This is an open-source project (originally made by 
+me, N Paul) and anybody can view, modify and rebuilt it. To download 
+the project source file visit my GitHub profile 
+https://www.github.com/nirmalpaul383/
+
+If you want to support me
+please give like to our Facebook page 
+https://www.facebook.com/a.new.way.technical/</Str>
+			<Int sr="arg2" val="12"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFF0000</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="2"/>
+			<Int sr="arg8" val="1"/>
+		</TextElement>
+		<ButtonElement sr="elements1" ve="3">
+			<clickTask>8</clickTask>
+			<flags>4</flags>
+			<geom>315,381,486,262,315,156,486,262</geom>
+			<Str sr="arg0" ve="3">Button1</Str>
+			<Str sr="arg1" ve="3">Set up this app ...</Str>
+			<Int sr="arg2" val="14"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FF0047FF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2"/>
+		</ButtonElement>
+		<ImageElement sr="elements2" ve="2">
+			<geom>390,43,336,306,390,0,336,306</geom>
+			<Str sr="arg0" ve="3">Image Alert Off</Str>
+			<Img sr="arg1" ve="2">
+				<nme>mw_social_notifications</nme>
+				<tint>-65536</tint>
+			</Img>
+			<Int sr="arg2" val="255"/>
+		</ImageElement>
+		<ImageElement sr="elements3" ve="2">
+			<geom>390,43,352,306,390,0,352,306</geom>
+			<Str sr="arg0" ve="3">Image Alert On</Str>
+			<Img sr="arg1" ve="2">
+				<nme>mw_social_notifications_active</nme>
+				<tint>-65536</tint>
+			</Img>
+			<Int sr="arg2" val="255"/>
+		</ImageElement>
+		<PropertiesElement sr="props">
+			<Int sr="arg0" val="2"/>
+			<Int sr="arg1" val="2"/>
+			<Str sr="arg2" ve="3">#FFFFFFFF</Str>
+			<Int sr="arg3" val="1"/>
+			<Str sr="arg4" ve="3">Battery Full Arert</Str>
+			<Str sr="arg5" ve="3"/>
+			<Img sr="arg6" ve="2"/>
+			<Str sr="arg7" ve="3"/>
+		</PropertiesElement>
+	</Scene>
+	<Scene sr="sceneFile Picker">
+		<cdate>1586952319159</cdate>
+		<edate>1587289424661</edate>
+		<heightLand>-1</heightLand>
+		<heightPort>1776</heightPort>
+		<nme>File Picker</nme>
+		<widthLand>-1</widthLand>
+		<widthPort>1080</widthPort>
+		<ListElement sr="elements0">
+			<flags>4</flags>
+			<geom>0,531,1080,1245,0,429,720,755</geom>
+			<itemclickTask>9</itemclickTask>
+			<Str sr="arg0" ve="3">Menu1</Str>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">%Lst_Files</Str>
+			<Int sr="arg3" val="0"/>
+			<Scene sr="arg4">
+				<Scene sr="val">
+					<cdate>1586952357579</cdate>
+					<edate>1586952357579</edate>
+					<heightLand>111</heightLand>
+					<heightPort>166</heightPort>
+					<nme>Builtin Item Layout</nme>
+					<widthLand>720</widthLand>
+					<widthPort>1080</widthPort>
+					<ImageElement sr="elements0" ve="2">
+						<flags>5</flags>
+						<geom>915,7,165,135,377,10,100,90</geom>
+						<Str sr="arg0" ve="3">Icon</Str>
+						<Img sr="arg1" ve="2">
+							<nme>mw_action_donut_small</nme>
+							<tint>-65536</tint>
+						</Img>
+						<Int sr="arg2" val="255"/>
+					</ImageElement>
+					<TextElement sr="elements1" ve="3">
+						<flags>5</flags>
+						<geom>0,7,913,135,74,10,293,90</geom>
+						<Str sr="arg0" ve="3">Label</Str>
+						<Str sr="arg1" ve="3"/>
+						<Int sr="arg2" val="16"/>
+						<Int sr="arg3" val="100"/>
+						<Str sr="arg4" ve="3">#FFFF0000</Str>
+						<Str sr="arg5" ve="3"/>
+						<Int sr="arg6" val="3"/>
+						<Int sr="arg7" val="1"/>
+						<Int sr="arg8" val="0"/>
+						<RectElement sr="background">
+							<flags>4</flags>
+							<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+							<Str sr="arg0" ve="3"/>
+							<Int sr="arg1" val="0"/>
+							<Str sr="arg2" ve="3">#FF00F9A6</Str>
+							<Str sr="arg3" ve="3"/>
+							<Int sr="arg4" val="0"/>
+							<Str sr="arg5" ve="3">#FF000000</Str>
+							<Int sr="arg6" val="0"/>
+							<Int sr="arg7" val="0"/>
+						</RectElement>
+					</TextElement>
+					<TextElement sr="elements2" ve="3">
+						<flags>1</flags>
+						<geom>15,15,79,135,10,10,53,90</geom>
+						<Str sr="arg0" ve="3">Index</Str>
+						<Str sr="arg1" ve="3">1.</Str>
+						<Int sr="arg2" val="22"/>
+						<Int sr="arg3" val="100"/>
+						<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+						<Str sr="arg5" ve="3"/>
+						<Int sr="arg6" val="0"/>
+						<Int sr="arg7"/>
+						<Int sr="arg8"/>
+					</TextElement>
+					<PropertiesElement sr="props">
+						<Int sr="arg0" val="1"/>
+						<Int sr="arg1" val="0"/>
+						<Str sr="arg2" ve="3">#00000000</Str>
+						<Int sr="arg3" val="0"/>
+						<Str sr="arg4" ve="3">Builtin Item Layout</Str>
+						<Str sr="arg5" ve="3"/>
+						<Img sr="arg6" ve="2"/>
+						<Str sr="arg7" ve="3"/>
+					</PropertiesElement>
+				</Scene>
+			</Scene>
+			<Int sr="arg5" val="1"/>
+			<Int sr="arg6" val="1"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</ListElement>
+		<TextElement sr="elements1" ve="3">
+			<flags>4</flags>
+			<geom>0,0,1080,300,0,204,719,100</geom>
+			<Str sr="arg0" ve="3">Text1</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="17"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FF0900FF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<TextElement sr="elements2" ve="3">
+			<clickTask>12</clickTask>
+			<flags>4</flags>
+			<geom>0,343,276,150,0,329,184,100</geom>
+			<Str sr="arg0" ve="3">Text2</Str>
+			<Str sr="arg1" ve="3">(root folder)</Str>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FF000000</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+		</TextElement>
+		<TextElement sr="elements3" ve="3">
+			<clickTask>13</clickTask>
+			<flags>4</flags>
+			<geom>390,343,298,156,260,329,199,104</geom>
+			<Str sr="arg0" ve="3">Text3</Str>
+			<Str sr="arg1" ve="3">(storage)</Str>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FF000000</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+		</TextElement>
+		<TextElement sr="elements4" ve="3">
+			<clickTask>14</clickTask>
+			<flags>4</flags>
+			<geom>802,343,277,156,535,329,184,104</geom>
+			<Str sr="arg0" ve="3">Text4</Str>
+			<Str sr="arg1" ve="3">(mnt)</Str>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FF000000</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+		</TextElement>
+		<PropertiesElement sr="props">
+			<Int sr="arg0" val="2"/>
+			<Int sr="arg1" val="2"/>
+			<Str sr="arg2" ve="3">#FFFFFFFF</Str>
+			<Int sr="arg3" val="1"/>
+			<Str sr="arg4" ve="3">File Picker</Str>
+			<Str sr="arg5" ve="3"/>
+			<Img sr="arg6" ve="2"/>
+			<Str sr="arg7" ve="3"/>
+			<ListElementItem sr="item0">
+				<label>Ok</label>
+				<Action sr="action" ve="7">
+					<code>130</code>
+					<Str sr="arg0" ve="3">[Sub] File Picker Done</Str>
+					<Int sr="arg1">
+						<var>%priority</var>
+					</Int>
+					<Str sr="arg2" ve="3"/>
+					<Str sr="arg3" ve="3"/>
+					<Str sr="arg4" ve="3"/>
+					<Int sr="arg5" val="0"/>
+				</Action>
+				<Img sr="icon" ve="2">
+					<nme>mw_action_done</nme>
+					<tint>-65536</tint>
+				</Img>
+			</ListElementItem>
+		</PropertiesElement>
+	</Scene>
+	<Scene sr="sceneIntro">
+		<cdate>1587288867444</cdate>
+		<edate>1587298517264</edate>
+		<gridSize>10</gridSize>
+		<heightLand>-1</heightLand>
+		<heightPort>1776</heightPort>
+		<nme>Intro</nme>
+		<widthLand>-1</widthLand>
+		<widthPort>1080</widthPort>
+		<ImageElement sr="elements0" ve="2">
+			<flags>4</flags>
+			<geom>255,603,606,600,185,404,374,400</geom>
+			<Str sr="arg0" ve="3">Image1</Str>
+			<Img sr="arg1" ve="2">
+				<uri>content://com.android.externalstorage.documents/document/primary%3AProject%20Battery%20Full%20Alert%2FLogo%20files%2F2500x2500%20jpg.jpg</uri>
+			</Img>
+			<Int sr="arg2" val="255"/>
+		</ImageElement>
+		<PropertiesElement sr="props">
+			<Int sr="arg0" val="2"/>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#FFFFFFFF</Str>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3">Intro</Str>
+			<Str sr="arg5" ve="3"/>
+			<Img sr="arg6" ve="2"/>
+			<Str sr="arg7" ve="3"/>
+		</PropertiesElement>
+	</Scene>
+	<Scene sr="sceneSetup">
+		<cdate>1586955361996</cdate>
+		<edate>1587298560982</edate>
+		<gridSize>10</gridSize>
+		<heightLand>-1</heightLand>
+		<heightPort>1776</heightPort>
+		<nme>Setup</nme>
+		<widthLand>-1</widthLand>
+		<widthPort>1080</widthPort>
+		<ButtonElement sr="elements0" ve="3">
+			<clickTask>5</clickTask>
+			<flags>4</flags>
+			<geom>795,213,285,262,485,104,234,175</geom>
+			<Str sr="arg0" ve="3">Button1</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="20"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FF000000</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2">
+				<nme>mw_file_folder_open</nme>
+				<tint>-65536</tint>
+			</Img>
+		</ButtonElement>
+		<TextElement sr="elements1" ve="3">
+			<flags>4</flags>
+			<geom>0,213,793,120,0,104,484,175</geom>
+			<Str sr="arg0" ve="3">Text1</Str>
+			<Str sr="arg1" ve="3">Select a music file from file picker...</Str>
+			<Int sr="arg2" val="12"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFF0000</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+		</TextElement>
+		<TextElement sr="elements10" ve="3">
+			<flags>4</flags>
+			<geom>0,483,1080,195,0,0,719,142</geom>
+			<Str sr="arg0" ve="3">Text6</Str>
+			<Str sr="arg1" ve="3">Step 2,</Str>
+			<Int sr="arg2" val="40"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FF0002FF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="1"/>
+				<Str sr="arg2" ve="3">#FF00FFC4</Str>
+				<Str sr="arg3" ve="3">#FF00FF4A</Str>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<TextElement sr="elements11" ve="3">
+			<flags>4</flags>
+			<geom>0,1218,1080,195,0,0,719,142</geom>
+			<Str sr="arg0" ve="3">Text7</Str>
+			<Str sr="arg1" ve="3">Step 3,</Str>
+			<Int sr="arg2" val="40"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FF0002FF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="1"/>
+				<Str sr="arg2" ve="3">#FF00FFC4</Str>
+				<Str sr="arg3" ve="3">#FF00FF4A</Str>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<TextElement sr="elements12" ve="3">
+			<flags>4</flags>
+			<geom>0,333,793,135,0,222,529,90</geom>
+			<Str sr="arg0" ve="3">Text8</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="10"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FF0B00FF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+		</TextElement>
+		<TextElement sr="elements2" ve="3">
+			<flags>4</flags>
+			<geom>0,693,283,255,0,354,209,175</geom>
+			<Str sr="arg0" ve="3">Text2</Str>
+			<Str sr="arg1" ve="3">Interval</Str>
+			<Int sr="arg2" val="17"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFF0000</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+		</TextElement>
+		<PickerElement sr="elements3">
+			<flags>4</flags>
+			<geom>675,693,223,262,460,354,149,175</geom>
+			<Str sr="arg0" ve="3">Number Picker1</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="59"/>
+			<Int sr="arg3" val="15"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3">#85000000</Str>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</PickerElement>
+		<PickerElement sr="elements4">
+			<flags>4</flags>
+			<geom>285,693,240,262,210,354,160,175</geom>
+			<Str sr="arg0" ve="3">Number Picker2</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="59"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3">#85000000</Str>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</PickerElement>
+		<TextElement sr="elements5" ve="3">
+			<flags>4</flags>
+			<geom>525,693,148,262,360,354,99,175</geom>
+			<Str sr="arg0" ve="3">Text3</Str>
+			<Str sr="arg1" ve="3">Minutes</Str>
+			<Int sr="arg2" val="12"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FF2200FF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+		</TextElement>
+		<TextElement sr="elements6" ve="3">
+			<flags>4</flags>
+			<geom>900,693,180,255,610,354,110,179</geom>
+			<Str sr="arg0" ve="3">Text4</Str>
+			<Str sr="arg1" ve="3">Seconds</Str>
+			<Int sr="arg2" val="12"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FF2200FF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+		</TextElement>
+		<ButtonElement sr="elements7" ve="3">
+			<clickTask>4</clickTask>
+			<flags>4</flags>
+			<geom>705,963,372,225,235,1004,274,180</geom>
+			<Str sr="arg0" ve="3">Button2</Str>
+			<Str sr="arg1" ve="3">Apply this interval</Str>
+			<Int sr="arg2" val="10"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFF0000</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2"/>
+		</ButtonElement>
+		<ToggleElement sr="elements8">
+			<checkchangeTask>3</checkchangeTask>
+			<flags>4</flags>
+			<geom>135,1428,823,345,0,954,719,230</geom>
+			<Str sr="arg0" ve="3">Toggle1</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">😴😴😴😴😴Service Currently Disabled😴😴😴😴😴</Str>
+			<Str sr="arg3" ve="3">☺☺☺☺☺Service Currently Enabled☺☺☺☺☺</Str>
+			<Int sr="arg4" val="15"/>
+			<Int sr="arg5" val="100"/>
+			<Str sr="arg6" ve="3">#FFFF0000</Str>
+		</ToggleElement>
+		<TextElement sr="elements9" ve="3">
+			<flags>4</flags>
+			<geom>0,0,1080,198,0,0,719,142</geom>
+			<Str sr="arg0" ve="3">Text5</Str>
+			<Str sr="arg1" ve="3">Step 1,</Str>
+			<Int sr="arg2" val="40"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FF0002FF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="1"/>
+				<Str sr="arg2" ve="3">#FF00FFC4</Str>
+				<Str sr="arg3" ve="3">#FF00FF4A</Str>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<PropertiesElement sr="props">
+			<Int sr="arg0" val="2"/>
+			<Int sr="arg1" val="2"/>
+			<Str sr="arg2" ve="3">#FFFFFFFF</Str>
+			<Int sr="arg3" val="1"/>
+			<Str sr="arg4" ve="3">Setup</Str>
+			<Str sr="arg5" ve="3"/>
+			<Img sr="arg6" ve="2"/>
+			<Str sr="arg7" ve="3"/>
+			<ListElementItem sr="item0">
+				<label>Back</label>
+				<Action sr="action" ve="7">
+					<code>49</code>
+					<Str sr="arg0" ve="3">Setup</Str>
+				</Action>
+				<Img sr="icon" ve="2">
+					<nme>mw_hardware_keyboard_backspace</nme>
+					<tint>-65536</tint>
+				</Img>
+			</ListElementItem>
+		</PropertiesElement>
+	</Scene>
+	<Task sr="task10">
+		<cdate>1586952660879</cdate>
+		<edate>1587291402878</edate>
+		<id>10</id>
+		<nme>File Picker</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>412</code>
+			<Str sr="arg0" ve="3">/storage</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3">%Lst_Files</Str>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%File_Path_Picked</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">File Picker</Str>
+			<Int sr="arg1" val="6"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="10"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>51</code>
+			<Str sr="arg0" ve="3">File Picker</Str>
+			<Str sr="arg1" ve="3">Text1</Str>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3">Current selected file:  %File_Path_Picked</Str>
+			<Str sr="arg4" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%File_Path_Picked</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+	</Task>
+	<Task sr="task11">
+		<cdate>1586954238042</cdate>
+		<edate>1587218437014</edate>
+		<id>11</id>
+		<nme>Setup</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">Setup</Str>
+			<Int sr="arg1" val="6"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="10"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>50</code>
+			<Str sr="arg0" ve="3">Setup</Str>
+			<Str sr="arg1" ve="3">Number Picker1</Str>
+			<Int sr="arg2">
+				<var>%Wait_Sec</var>
+			</Int>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%Wait_Sec</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>50</code>
+			<Str sr="arg0" ve="3">Setup</Str>
+			<Str sr="arg1" ve="3">Number Picker1</Str>
+			<Int sr="arg2" val="15"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%Wait_Sec</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>50</code>
+			<Str sr="arg0" ve="3">Setup</Str>
+			<Str sr="arg1" ve="3">Number Picker2</Str>
+			<Int sr="arg2">
+				<var>%Wait_Min</var>
+			</Int>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%Wait_Min</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>50</code>
+			<Str sr="arg0" ve="3">Setup</Str>
+			<Str sr="arg1" ve="3">Number Picker2</Str>
+			<Int sr="arg2" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%Wait_Min</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>50</code>
+			<Str sr="arg0" ve="3">Setup</Str>
+			<Str sr="arg1" ve="3">Toggle1</Str>
+			<Int sr="arg2" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%PENABLED</lhs>
+					<op>3</op>
+					<rhs>*Charge Full*</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>50</code>
+			<Str sr="arg0" ve="3">Setup</Str>
+			<Str sr="arg1" ve="3">Toggle1</Str>
+			<Int sr="arg2" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%PENABLED</lhs>
+					<op>2</op>
+					<rhs>*Charge Full*</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>51</code>
+			<Str sr="arg0" ve="3">Setup</Str>
+			<Str sr="arg1" ve="3">Text8</Str>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3">Currently Selected  %File_Path_Picked</Str>
+			<Str sr="arg4" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%File_Path_Picked</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>51</code>
+			<Str sr="arg0" ve="3">Setup</Str>
+			<Str sr="arg1" ve="3">Text8</Str>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3">Currently no music has been Selected</Str>
+			<Str sr="arg4" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%File_Path_Picked</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+	</Task>
+	<Task sr="task12">
+		<cdate>1586954737956</cdate>
+		<edate>1586954737956</edate>
+		<id>12</id>
+		<pri>106</pri>
+		<Action sr="act0" ve="7">
+			<code>412</code>
+			<Str sr="arg0" ve="3">/</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3">%Lst_Files</Str>
+		</Action>
+	</Task>
+	<Task sr="task13">
+		<cdate>1586954737956</cdate>
+		<edate>1586954737956</edate>
+		<id>13</id>
+		<pri>106</pri>
+		<Action sr="act0" ve="7">
+			<code>412</code>
+			<Str sr="arg0" ve="3">/storage</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3">%Lst_Files</Str>
+		</Action>
+	</Task>
+	<Task sr="task14">
+		<cdate>1586954737956</cdate>
+		<edate>1586954737956</edate>
+		<id>14</id>
+		<pri>106</pri>
+		<Action sr="act0" ve="7">
+			<code>412</code>
+			<Str sr="arg0" ve="3">/mnt</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3">%Lst_Files</Str>
+		</Action>
+	</Task>
+	<Task sr="task15">
+		<cdate>1586955795308</cdate>
+		<edate>1587290165451</edate>
+		<id>15</id>
+		<nme>Alert</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%Wait_Min</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%Wait_Min</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%Wait_Sec</Str>
+			<Str sr="arg1" ve="3">15</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%Wait_Sec</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>192</code>
+			<label>Start Two</label>
+			<Int sr="arg0" val="0"/>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="4"/>
+		</Action>
+		<Action sr="act11" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>342</code>
+			<Int sr="arg0" val="5"/>
+			<Str sr="arg1" ve="3">%File_Path_Picked</Str>
+			<Str sr="arg2" ve="3">%File_Test_Exists</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>523</code>
+			<Str sr="arg0" ve="3">Battery Full Alert Report 1</Str>
+			<Str sr="arg1" ve="3">Charging Compeleted On %TIME</Str>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3"/>
+			<Img sr="arg2" ve="2">
+				<nme>mw_device_battery_charging_full</nme>
+			</Img>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="0"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%File_Test_Exists</lhs>
+					<op>2</op>
+					<rhs>true</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>445</code>
+			<label>Start</label>
+			<Str sr="arg0" ve="3">%File_Path_Picked</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="4"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>449</code>
+			<Int sr="arg0" val="1"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1">
+				<var>%Wait_Sec</var>
+			</Int>
+			<Int sr="arg2">
+				<var>%Wait_Min</var>
+			</Int>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>135</code>
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">Start</Str>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>43</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%File_Test_Exists</lhs>
+					<op>2</op>
+					<rhs>false</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+	</Task>
+	<Task sr="task2">
+		<cdate>1586956154467</cdate>
+		<edate>1587290189972</edate>
+		<id>2</id>
+		<nme>Alert Stop</nme>
+		<Action sr="act0" ve="7">
+			<code>523</code>
+			<Str sr="arg0" ve="3">Battery Full Alert Report 2</Str>
+			<Str sr="arg1" ve="3">Charging Disconected On %TIME</Str>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3"/>
+			<Img sr="arg2" ve="2">
+				<nme>mw_device_battery_charging_full</nme>
+			</Img>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<Str sr="arg9" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%BATT</lhs>
+					<op>2</op>
+					<rhs>100</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>137</code>
+			<Int sr="arg0" val="0"/>
+			<Str sr="arg1" ve="3">Alert</Str>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>449</code>
+			<Int sr="arg0" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task3">
+		<cdate>1587039795707</cdate>
+		<edate>1587039795707</edate>
+		<id>3</id>
+		<pri>104</pri>
+		<Action sr="act0" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%PENABLED</lhs>
+					<op>3</op>
+					<rhs>*Charge Full*</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>159</code>
+			<Str sr="arg0" ve="3">Charge Full</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>50</code>
+			<Str sr="arg0" ve="3">Setup</Str>
+			<Str sr="arg1" ve="3">Toggle1</Str>
+			<Int sr="arg2" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%PENABLED</lhs>
+					<op>3</op>
+					<rhs>*Charge Full*</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act11" ve="7">
+			<code>65</code>
+			<Str sr="arg0" ve="3">Battery Full Arert</Str>
+			<Str sr="arg1" ve="3">Image Alert On</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="400"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act12" ve="7">
+			<code>65</code>
+			<Str sr="arg0" ve="3">Battery Full Arert</Str>
+			<Str sr="arg1" ve="3">Image Alert Off</Str>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="400"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act13" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>523</code>
+			<Str sr="arg0" ve="3">Battery Full Alert</Str>
+			<Str sr="arg1" ve="3">Service is running...</Str>
+			<Str sr="arg10" ve="3"/>
+			<Str sr="arg11" ve="3"/>
+			<Img sr="arg2" ve="2">
+				<nme>mw_device_battery_charging_full</nme>
+			</Img>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="1"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+			<Str sr="arg9" ve="3"/>
+			<ListElementItem sr="item0">
+				<label>Run Main UI</label>
+				<Action sr="action" ve="7">
+					<code>130</code>
+					<Str sr="arg0" ve="3">Battery Full Alert Runner</Str>
+					<Int sr="arg1">
+						<var>%priority</var>
+					</Int>
+					<Str sr="arg2" ve="3"/>
+					<Str sr="arg3" ve="3"/>
+					<Str sr="arg4" ve="3"/>
+					<Int sr="arg5" val="0"/>
+				</Action>
+			</ListElementItem>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>50</code>
+			<Str sr="arg0" ve="3">Setup</Str>
+			<Str sr="arg1" ve="3">Toggle1</Str>
+			<Int sr="arg2" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%PENABLED</lhs>
+					<op>2</op>
+					<rhs>*Charge Full*</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Service is running...</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>65</code>
+			<Str sr="arg0" ve="3">Battery Full Arert</Str>
+			<Str sr="arg1" ve="3">Image Alert Off</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="400"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>65</code>
+			<Str sr="arg0" ve="3">Battery Full Arert</Str>
+			<Str sr="arg1" ve="3">Image Alert On</Str>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="400"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>43</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%PENABLED</lhs>
+					<op>2</op>
+					<rhs>*Charge Full*</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>159</code>
+			<Str sr="arg0" ve="3">Charge Full</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>779</code>
+			<Str sr="arg0" ve="3">Battery Full Alert</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task4">
+		<cdate>1587040741211</cdate>
+		<edate>1587040741211</edate>
+		<id>4</id>
+		<pri>104</pri>
+		<Action sr="act0" ve="7">
+			<code>195</code>
+			<Str sr="arg0" ve="3">Setup</Str>
+			<Str sr="arg1" ve="3">Number Picker1</Str>
+			<Int sr="arg2" val="2"/>
+			<Str sr="arg3" ve="3">%Sec_Value</Str>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>195</code>
+			<Str sr="arg0" ve="3">Setup</Str>
+			<Str sr="arg1" ve="3">Number Picker2</Str>
+			<Int sr="arg2" val="2"/>
+			<Str sr="arg3" ve="3">%Min_Value</Str>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%Wait_Sec</Str>
+			<Str sr="arg1" ve="3">%Sec_Value</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%Wait_Min</Str>
+			<Str sr="arg1" ve="3">%Min_Value</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Applied...</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task5">
+		<cdate>1587041845609</cdate>
+		<edate>1587041845609</edate>
+		<id>5</id>
+		<pri>104</pri>
+		<Action sr="act0" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">File Picker</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task6">
+		<cdate>1587043003115</cdate>
+		<edate>1587043033235</edate>
+		<id>6</id>
+		<nme>[Sub] File Picker Done</nme>
+		<Action sr="act0" ve="7">
+			<code>51</code>
+			<Str sr="arg0" ve="3">Setup</Str>
+			<Str sr="arg1" ve="3">Text8</Str>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3">Currently Selected  %File_Path_Picked</Str>
+			<Str sr="arg4" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%File_Path_Picked</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>49</code>
+			<Str sr="arg0" ve="3">File Picker</Str>
+		</Action>
+	</Task>
+	<Task sr="task7">
+		<cdate>1587218072757</cdate>
+		<edate>1587292517527</edate>
+		<id>7</id>
+		<nme>Battery Full Alert Runner</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">Intro</Str>
+			<Int sr="arg1" val="9"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="10"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="2"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>65</code>
+			<Str sr="arg0" ve="3">Battery Full Arert</Str>
+			<Str sr="arg1" ve="3">Image Alert On</Str>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="400"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act11" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">Battery Full Arert</Str>
+			<Int sr="arg1" val="6"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>49</code>
+			<Str sr="arg0" ve="3">Intro</Str>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Alert Stop</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%PENABLED</lhs>
+					<op>3</op>
+					<rhs>*Charge Full*</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>65</code>
+			<Str sr="arg0" ve="3">Battery Full Arert</Str>
+			<Str sr="arg1" ve="3">Image Alert On</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="400"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>65</code>
+			<Str sr="arg0" ve="3">Battery Full Arert</Str>
+			<Str sr="arg1" ve="3">Image Alert Off</Str>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="400"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>43</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%PENABLED</lhs>
+					<op>2</op>
+					<rhs>*Charge Full*</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>65</code>
+			<Str sr="arg0" ve="3">Battery Full Arert</Str>
+			<Str sr="arg1" ve="3">Image Alert Off</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="400"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task8">
+		<cdate>1587218329251</cdate>
+		<edate>1587218329251</edate>
+		<id>8</id>
+		<pri>102</pri>
+		<Action sr="act0" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Setup</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task9">
+		<cdate>1586952582723</cdate>
+		<edate>1586952582723</edate>
+		<id>9</id>
+		<pri>106</pri>
+		<Action sr="act0" ve="7">
+			<code>342</code>
+			<Int sr="arg0" val="4"/>
+			<Str sr="arg1" ve="3">%Lst_Files(%tap_index)</Str>
+			<Str sr="arg2" ve="3">%Test_File_Dir_Type</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%Test_File_Dir_Type</lhs>
+					<op>2</op>
+					<rhs>dir</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">File selected
+"%File_Path_Picked"</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act11" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act12" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>412</code>
+			<Str sr="arg0" ve="3">%Lst_Files(%tap_index)</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3">%Lst_Files</Str>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>43</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%Test_File_Dir_Type</lhs>
+					<op>2</op>
+					<rhs>file</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%File_Path_Picked</Str>
+			<Str sr="arg1" ve="3">%Lst_Files(%tap_index)</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%File_Path_Picked</lhs>
+					<op>3</op>
+					<rhs>*.mp3/*.aac/*.ogg</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>549</code>
+			<Str sr="arg0" ve="3">%File_Path_Picked</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">This program does not support that type of file.</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>43</code>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>51</code>
+			<Str sr="arg0" ve="3">File Picker</Str>
+			<Str sr="arg1" ve="3">Text1</Str>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3">Current selected file:  %File_Path_Picked</Str>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+	</Task>
+</TaskerData>

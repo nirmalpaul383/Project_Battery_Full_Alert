@@ -28,7 +28,8 @@ then you 'will need both' Tasker and its extension app Tasker app factory.
 
 Here is a directory and file guide:
 
-Project Battery Full Alert(Root Folder) > Apk files(folder), Logo Files(Folder), Project Files(Folder) ;
+    Project Battery Full Alert(Root Folder) > Apk files(folder), Logo Files(Folder), Project Files(Folder) ;
+
        Apk files(Folder) > FullHD+ Screen(Folder), HD Screen(Folder) ;
                FullHD+ Screen(Folder) > Battery Full Alert( for FULLHD+ Display).apk ;
                HD Screen(Folder) > Battery Full Alert( for HD Display).apk ;
